@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Mostrar imagen</title>
+    
+</head>
+<body>
+  <h1>Mostrar Imagen Full Screen</h1>
+  <form action="/showfs" method="POST" enctype="multipart/form-data">
+
+<input  class ="w3-input" type ="file" name="selectfile" placeholder = "Seleccione una imagen"> </input>
+<br>
+<input class="w3-btn w3-green" type="submit">
+</form>
+      
+
+    
+</body>
+</html>
+{% endblock %}
